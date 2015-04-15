@@ -1,4 +1,4 @@
-# Trying Kotlin + Rx
+# Trying Kotlin + Rx + Anko
 
 dagezi@{twitter, github, gmail.com}
 
@@ -6,6 +6,7 @@ dagezi@{twitter, github, gmail.com}
 
 ## 自己紹介
 
+- Java or C おじさん
 - Quipperで Androidやってます
 - インドネシア、フィリピン向け教育アプリ
 - これから日本もまじめに挑戦します
@@ -38,32 +39,47 @@ dagezi@{twitter, github, gmail.com}
 
 
 
-## dagezi前提
-
-- Lambda歴 20年
- - ただし emacs, scheme
- - Java8歴は 1週間ぐらい
-- Rx歴 1日
-
-
-
-## とりあえずできかけ
-
-- [github/dagezi/KotlinSample](https://github.com/dagezi/KotolinSample)
- - やる気のない名前ですみません
- - Github API 叩いて Notificationとってきます
+![KotlinSample](KotlinSample.png)
 
 
 
 ## 構成要素
 
-- Kotlin
-- RxAndroid
-- Retrofit
+- [github/dagezi/KotlinSample](https://github.com/dagezi/KotolinSample)
+ - Kotlin
+ - RxAndroid
+ - Retrofit
+ - Anko?
+
+
+## Kotlin
+- 名前が可愛い Alt Java 言語
+- いろいろ Javaより使いやすい
+ - NonNull, data class, lambda
+- Jake神の推しメン
 
 
 
-## RxKotlin or RxAndroid
+## RxAndroid
+- Reactive eXtentionを Androidに適合
+- Activityの寿命、threadなどをサポート
+- Jake神が強力にサポート
+
+
+
+## RxKotlin
+- RxKotlin
+ - いろいろ便利な関数がありそう
+ - でも必須でもなさそう
+ - 今回はパス
+
+
+
+## Anko
+- XMLとか使わなくても layout描ける!
+- typesafe!
+- inflaterないだけ速い (のか)?
+- Jake神いまのところ傍観
 
 
 
@@ -73,11 +89,29 @@ dagezi@{twitter, github, gmail.com}
 - Retrofit、GSON は使えてよかった
 
 
-## 面白そうなもの
+
+## 辛い点: Anko
+ListAdapter と使う方法がよくわからない!
+
+```
+    java.lang.UnsupportedOperationException: addView(View)
+            is not supported in AdapterView
+            at android.widget.AdapterView.addView()
+```
+
+電池切れ。
 
 
 
+## まとめ
+- 割と楽しくおじさんでもアプリかけた
+- 頑張ってまともなアプリにします!
 
+
+
+## Wanted!
+
+![wanted](wantedly.png)
 
 
 
